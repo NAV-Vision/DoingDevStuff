@@ -3,7 +3,6 @@
     Subtype = Test;
 
     var
-        MessageDisplayed: Boolean;
         Assert: Codeunit "Library Assert";
 
     [Test]
