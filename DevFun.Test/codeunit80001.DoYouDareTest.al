@@ -4,7 +4,7 @@
 
     var
         Assert: Codeunit "Library Assert";
-        MessageDisplayed: Boolean;
+        QuestionAsked: Boolean;
 
     [Test]
     [HandlerFunctions('DoYouDareMessageHandler')]
@@ -14,13 +14,13 @@
     begin
         CustList.OpenView();
         CustList.Close();
-        if (not MessageDisplayed) then
+        if (not QuestionAsked) then
             ERROR('Message was not displayed!');
     end;
 
-    [MessageHandler]
-    procedure DoYouDareMessageHandler(Message: Text[1024])
+    [ConfirmHandler]
+    procedure DoYouDareMessageHandler(Question: Text[1024]; var Reply: Boolean)
     begin
-        MessageDisplayed := MessageDisplayed or (Message = '9625152131141851420891923514554251521 \Can you guess the code?');
+        QuestionAsked := QuestionAsked or (Question = '9625152131141851420891923514554251521 \Can you guess the code?');
     end;
 }
