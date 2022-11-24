@@ -22,6 +22,12 @@
                              "name":  "Any",
                              "id":  "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
                              "version":  "19.0.0.0"
+                         },
+                         {
+                            "publisher": "NAV-Vision",
+                            "name": "DevFun",
+                            "id": "4d79938b-cb89-436a-ac4c-0729018846ec",
+                            "version": "1.0.0.0"
                          }
                      ],
     "screenshots":  [

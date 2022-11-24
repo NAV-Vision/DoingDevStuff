@@ -1,6 +1,6 @@
 codeunit 50000 "NVI - Fibonacci Mgt."
 {
-    internal procedure GetFibonacci(input: Integer): Integer
+    Procedure GetFibonacci(input: Integer): Integer
     begin
         if (input <= 0) then
             exit(0)
