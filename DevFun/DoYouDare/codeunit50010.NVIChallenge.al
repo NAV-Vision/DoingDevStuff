@@ -1,4 +1,4 @@
-codeunit 50010 "NVI - Do You Dare"
+codeunit 50010 "NVI - Challenge"
 {
     internal procedure CanYouRead()
     var

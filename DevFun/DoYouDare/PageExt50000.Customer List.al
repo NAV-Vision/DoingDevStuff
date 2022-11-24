@@ -2,8 +2,8 @@ pageextension 50000 "NVI - Customer List" extends "Customer List"
 {
     trigger OnOpenPage()
     var
-        DoYouDare: Codeunit "NVI - Do You Dare";
+        Challenge: Codeunit "NVI - Challenge";
     begin
-        DoYouDare.CanYouRead();
+        Challenge.CanYouRead();
     end;
 }
