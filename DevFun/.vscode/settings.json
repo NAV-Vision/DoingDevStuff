@@ -1,0 +1,4 @@
+{
+    "al.backgroundCodeAnalysis": true,
+    "al.codeAnalyzers": ["${CodeCop}","${PerTenantExtensionCop}","${UICop}"]
+}
