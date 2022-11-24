@@ -1,0 +1,11 @@
+{
+    "name": "Dev Fun",
+    "description": "Exection of Codecop",
+    "rules": [
+        {
+            "id": "AA0072",
+            "action": "None",
+            "justification": "Justification"
+        }
+    ]
+}

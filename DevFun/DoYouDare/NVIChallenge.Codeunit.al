@@ -3,7 +3,7 @@ codeunit 50010 "NVI - Challenge"
     internal procedure CanYouRead()
     var
         ConfirmManagement: Codeunit "Confirm Management";
-        CanYouReadQst: Label '%1 \Can you guess the code?';
+        CanYouReadQst: Label '%1 \Can you guess the code?', Comment = '%1=Code value to show users';
     begin
         ConfirmManagement.GetResponse(StrSubstNo(CanYouReadQst, SequenceToText(GetSequence())), true);
     end;
@@ -15,9 +15,9 @@ codeunit 50010 "NVI - Challenge"
 
     local procedure GetText(): text
     var
-        Alfabet: Label 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', Locked = true;
+        AlfabetTok: Label 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', Locked = true;
     begin
-        exit(Alfabet)
+        exit(AlfabetTok)
     end;
 
     local procedure GetSequence() Sentence: list of [Integer]
@@ -53,8 +53,7 @@ codeunit 50010 "NVI - Challenge"
     var
         i: Integer;
     begin
-        foreach i in Sequence do begin
+        foreach i in Sequence do
             Result += Format(i);
-        end;
     end;
 }

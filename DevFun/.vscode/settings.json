@@ -1,4 +1,6 @@
 {
     "al.backgroundCodeAnalysis": true,
-    "al.codeAnalyzers": ["${CodeCop}","${PerTenantExtensionCop}","${UICop}"]
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": ["${CodeCop}","${PerTenantExtensionCop}","${UICop}"],
+    "al.ruleSetPath": "DevFun.Ruleset.Json"
 }

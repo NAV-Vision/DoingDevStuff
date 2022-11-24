@@ -1,4 +1,4 @@
-﻿{
+{
     "folders":  [
                     {
                         "path":  ".AL-Go"
@@ -9,5 +9,7 @@
                 ],
     "settings":  {
 
-                 }
+                 },
+                 "al.backgroundCodeAnalysis": true,
+                 "al.codeAnalyzers": ["${CodeCop}","${PerTenantExtensionCop}","${UICop}"]
 }
