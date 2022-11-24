@@ -1,15 +1,22 @@
-{
+﻿{
     "folders":  [
                     {
                         "path":  ".AL-Go"
                     },
                     {
                         "path":  "DevFun"
+                    },
+                    {
+                        "path":  "DevFun.Test"
                     }
                 ],
     "settings":  {
 
                  },
-                 "al.backgroundCodeAnalysis": true,
-                 "al.codeAnalyzers": ["${CodeCop}","${PerTenantExtensionCop}","${UICop}"]
+    "al.backgroundCodeAnalysis":  true,
+    "al.codeAnalyzers":  [
+                             "${CodeCop}",
+                             "${PerTenantExtensionCop}",
+                             "${UICop}"
+                         ]
 }
